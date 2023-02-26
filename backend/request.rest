@@ -1,0 +1,24 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/1
+
+###
+POST GET http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name":"vidhya",
+    "department":"Hr",
+    "sex":"female",
+    "address":"abc"
+}
+### 
+PATCH http://localhost:5000/users/1 Content-Type: application/json
+
+{
+"name": "tamizh", "department": "abc@gmail.com", "sex": "female","adddress":"abc"
+}
+
+### 
+DELETE http://localhost:5000/users/2
